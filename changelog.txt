@@ -1,4 +1,11 @@
-Update via OTA 
-Fix rotation in ota updater
-Update camera mod by Arseniy
-New design by Ldt
+Update via RECOVERY and Wipe data
+OneUI 7 S23 FE (Beta 1)
+Mostly stable
+Base S711BXXU6EYD9
+April Secure Patch
+AI Work
+For now there are no: Lich Settings and more
+Nfc and Bluetooth work
+Bugs:
+Doesn't read SDcard
+Android error text after boot (doesn't affect anything)
