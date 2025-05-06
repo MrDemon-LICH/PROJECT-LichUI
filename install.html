@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LichUI - Installation Guide</title>
+    <link rel="icon" type="image/png" href="readme-res/Icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'Samsung Sharp Sans';
+            src: url('readme-res/fonts/samsungsharpsans-medium.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Samsung Sharp Sans';
+            src: url('readme-res/fonts/samsungsharpsans-bold.otf') format('opentype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Samsung Sharp Sans', sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #1a1a1a;
+            border-bottom: 1px solid #333;
+            position: relative;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 30px;
+        }
+        .left-buttons {
+            position: absolute;
+            right: 50%;
+            margin-right: 100px;
+        }
+        .right-buttons {
+            position: absolute;
+            left: 50%;
+            margin-left: 100px;
+        }
+        .nav-logo {
+            position: relative;
+            z-index: 2;
+        }
+        .nav-logo h1 {
+            font-size: 2.8em;
+            color: #ffffff;
+            margin: 0;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            gap: 2px;
+        }
+        .nav-logo h1:hover {
+            transform: scale(1.1);
+        }
+        .nav-logo h1 span {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .nav-logo h1:hover span:nth-child(1) { transform: rotate(-5deg); }
+        .nav-logo h1:hover span:nth-child(2) { transform: rotate(3deg); }
+        .nav-logo h1:hover span:nth-child(3) { transform: rotate(-2deg); }
+        .nav-logo h1:hover span:nth-child(4) { transform: rotate(4deg); }
+        .nav-logo h1:hover span:nth-child(5) { transform: rotate(-3deg); }
+        .nav-button {
+            padding: 10px 0;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 1.1em;
+            background: none;
+            border: none;
+        }
+        .nav-button:hover {
+            transform: translateY(-2px);
+        }
+        .nav-button.active {
+            background: linear-gradient(90deg, #ff6b6b 50%, #ff9500 50%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            .nav-buttons {
+                display: none;
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 250px;
+                height: 100vh;
+                background-color: white;
+                flex-direction: column;
+                padding: 80px 20px 20px;
+                box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+                transition: right 0.3s ease;
+                z-index: 1000;
+            }
+            .nav-buttons.active {
+                right: 0;
+                display: flex;
+            }
+            .nav-button {
+                width: 100%;
+                text-align: center;
+                margin: 10px 0;
+            }
+            .install-guide {
+                padding: 12px;
+                margin: 10px 0;
+            }
+            .warning {
+                padding: 10px;
+                font-size: 0.98em;
+                margin: 12px 0;
+            }
+            .steps {
+                padding-left: 10px;
+                font-size: 0.98em;
+            }
+            .steps ul {
+                padding-left: 14px;
+            }
+            .download-button {
+                font-size: 1em;
+                padding: 0;
+            }
+            h1, h2, h3 {
+                font-size: 1.2em;
+                margin: 14px 0;
+            }
+            p {
+                font-size: 1em;
+            }
+            .credits {
+                padding-top: 10px;
+                font-size: 0.98em;
+            }
+            .credits-button {
+                position: static;
+                display: block;
+                margin: 16px auto 0 auto;
+                text-align: center;
+            }
+        }
+        .install-guide {
+            background-color: #2a2a2a;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .warning {
+            background-color: #332a1a;
+            border-left: 4px solid #ff9500;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            color: #ffffff;
+        }
+        .steps {
+            margin: 20px 0;
+            padding-left: 20px;
+            color: #ffffff;
+        }
+        .steps li {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+        .steps ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .steps ul li {
+            margin: 8px 0;
+        }
+        .download-button {
+            background: none;
+            color: transparent;
+            background: linear-gradient(90deg, #ff6b6b 50%, #ff9500 50%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            font-weight: bold;
+            border: none;
+            box-shadow: none;
+            padding: 0;
+            margin: 0 2px;
+            min-width: unset;
+            text-align: left;
+            border-radius: 0;
+            font-size: 1em;
+            display: inline;
+            transition: background-position 0.4s cubic-bezier(0.4,0,0.2,1);
+            background-size: 200% 100%;
+            background-position: 0% 50%;
+        }
+        .download-button:hover {
+            background-position: 100% 50%;
+            color: transparent;
+            text-decoration: underline;
+        }
+        .download-button:active {
+            color: transparent;
+        }
+        .download-button i {
+            margin-right: 6px;
+            font-size: 0.95em;
+        }
+        h1, h2, h3 {
+            margin: 20px 0;
+            color: #ffffff;
+        }
+        p {
+            margin: 10px 0;
+            color: #ffffff;
+        }
+        .credits {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #ffffff;
+        }
+        .credits-button {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-buttons left-buttons">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="install.html" class="nav-button active">Install</a>
+            <a href="screenshot.html" class="nav-button">Screenshot</a>
+        </div>
+        <div class="nav-logo">
+            <h1 onclick="window.open('https://www.youtube.com/watch?v=GBIIQ0kP15E', '_blank')">
+                <span>L</span>
+                <span>i</span>
+                <span>c</span>
+                <span>h</span>
+                <span>UI</span>
+            </h1>
+        </div>
+        <div class="nav-buttons right-buttons">
+            <a href="modules.html" class="nav-button">Modules</a>
+            <a href="credits.html" class="nav-button">Credits</a>
+            <a href="about.html" class="nav-button">About</a>
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="install-guide">
+        <h1>Installation Guide</h1>
+        
+        <div class="warning">
+            <strong>Read very carefully!</strong><br/>
+            Installing a custom ROM will erase your data, so back it up!
+        </div>
+
+        <h2>Prerequisites</h2>
+        <ol class="steps">
+            <li>Install <a href="https://developer.samsung.com/android-usb-driver" class="download-button" target="_blank">Samsung USB driver</a>, 
+                <a href="https://odindownloader.com/download/odin3-v3-14-4" class="download-button" target="_blank">Odin</a> and download 
+                <a href="https://github.com/MrDemon-LICH/PROJECT-LichUI/releases" class="download-button" target="_blank">LichUI</a> to your PC</li>
+            <li>If you have `EGY` csc `A546EXXSBCYA2` (for E model) and `EUX` csc `A546BXXSBCYB1` (for B model) - <strong>skip 3, 13, 14, 15 points</strong></li>
+            <li>If you haven't `EGY` csc for E model and `EUX` csc for B model - download and unpack your stock system to PC:
+                <ul>
+                    <li><a href="https://samfw.com/firmware/SM-A546B/EUX/A546BXXSBCYB1" class="download-button" target="_blank">B model: A546BXXSBCYB1, CSC EUX</a></li>
+                    <li><a href="https://samfw.com/firmware/SM-A546E/EGY/A546EXXSBCYA2" class="download-button" target="_blank">E model: A546EXXSBCYA2, CSC EGY</a></li>
+                </ul>
+            </li>
+            <li>Download last <a href="https://github.com/Vaz15k/android_device_samsung_a54x/releases/tag/2024-12-08" class="download-button" target="_blank">OrangeFox Recovery</a> or last 
+                <a href="https://github.com/MrDemon-LICH/android_device_samsung_a54x/releases/tag/2025-04-06" class="download-button" target="_blank">Twrp</a> to your PC for your phone model</li>
+            <li>Download `vbmeta_patched`:
+                <ul>
+                    <li><a href="https://github.com/Vaz15k/proprietary_vendor_samsung_a54x/releases/tag/A546BXXSBCYB1_OXM" class="download-button" target="_blank">B model</a></li>
+                    <li><a href="https://github.com/Vaz15k/proprietary_vendor_samsung_a54x/releases/tag/A546EXXSBCYA2_OJM" class="download-button" target="_blank">E model</a></li>
+                </ul>
+            </li>
+            <li>Unlock OEM and Download mode (You need to press `Build number` several times and click `OEM unlocking` in developer settings)</li>
+            <li>Turn off your Samsung and connect cable to PC. After connecting you see the charging state</li>
+        </ol>
+
+        <div class="warning">
+            <strong>Do not disconnect the cable before the 31th point!</strong>
+        </div>
+
+        <h2>Steps</h2>
+        <ol class="steps" start="8">
+            <li>Press `Volume Up` + `Volume Down` at the same time and hold it before enabling Download mode</li>
+            <li>If the bootloader asks you to unlock it, hold down the `Volume Up` button for any seconds (before unlocking)</li>
+            <li>After this - skip start settings if the phone booted and resets the settings</li>
+            <li>Unpack and open Odin</li>
+            <li>Turn off your phone and repeat the 8th point</li>
+            <li>Go to Odin, find your unpacked stock system and install `BL` to `BL`, `AP` to `AP`, `CP` to `CP`, `CSC` to `CSC` (check stock files name)</li>
+            <li>After installation, your phone will boot to system. Skip start settings. After this - turn off your phone and repeat the 8th point</li>
+            <div class="warning">
+                <strong>Do not close Odin!</strong>
+            </div>
+            <li>Click `RESET` in Odin</li>
+            <li>Click to `AP` - find your OrangeFox Recovery in PC and click to it</li>
+            <li>Click to `USERDATA` - find your `vbmeta_patched` in PC and click to it</li>
+            <li>Click to `Options` in Odin and disable `Auto Reboot`, `Nand Erase`, `Re-Partition`</li>
+            <li>Click `START`</li>
+            <li>After installation (you'll see "PASS"), press `Power Button` + `Volume Down` at the same time and hold it before the black screen</li>
+            <li>When you see the black screen - fast press `Power Button` + `Volume Up` at the same time and hold it before the phone shows OrangeFox Recovery</li>
+            <li>In OrangeFox click the basket button - click `format data` - write `yes`</li>
+            <li><strong>Don't click `Reboot`</strong> and copy `LICHUI_4.0.x_a54x.zip` from PC to your phone's internal storage (if your PC sees your internal storage while phone is in recovery, <strong>just skip 24-27 points</strong>)</li>
+            <li>Click `Reboot system` and skip start settings again</li>
+            <li>After skipping - allow data transfer in the pop-up window on the phone</li>
+            <li>Copy `LICHUI_4.0.x_a54x.zip` from PC to your phone's internal storage</li>
+            <li>After copying turn off your phone and press `Power Button` + `Volume Up` at the same time and hold it before it shows OrangeFox Recovery</li>
+            <li>In recovery click the first button from the bottom left</li>
+            <li>Find your `LICHUI_4.0.x_a54x.zip file`, click to it and swipe to right for install</li>
+            <li>After installation - repeat the 22th point and click `Reboot system`</li>
+            <li><strong>Done!</strong></li>
+        </ol>
+
+        <div class="credits">
+            Installation guide by <a href="https://t.me/Arsenybespomestnov" class="download-button" target="_blank">Arseniy</a> and 
+            <a href="https://github.com/ldtdev0/" class="download-button" target="_blank">ldt</a>
+        </div>
+    </div>
+
+    <script>
+    function toggleMenu() {
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navButtons = document.querySelector('.nav-buttons');
+        hamburger.classList.toggle('active');
+        navButtons.classList.toggle('active');
+    }
+
+    // Cerrar menú al hacer clic en un enlace
+    document.querySelectorAll('.nav-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const hamburger = document.querySelector('.hamburger-menu');
+            const navButtons = document.querySelector('.nav-buttons');
+            hamburger.classList.remove('active');
+            navButtons.classList.remove('active');
+        });
+    });
+
+    // Cerrar menú al hacer clic fuera
+    document.addEventListener('click', (e) => {
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navButtons = document.querySelector('.nav-buttons');
+        if (!hamburger.contains(e.target) && !navButtons.contains(e.target) && navButtons.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navButtons.classList.remove('active');
+        }
+    });
+    </script>
+</body>
+</html>

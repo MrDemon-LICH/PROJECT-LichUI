@@ -1,0 +1,55 @@
+name: Updater Helper
+
+on:
+  workflow_dispatch:
+    inputs:
+      Rom:
+        description: 'Link Rom'
+        required: true
+        default: 'http://example.com'
+      Fw_E:
+        description: 'Firmware E'
+        required: true
+        default: 'http://example.com'
+      Fw_B:
+        description: 'Firmware B'
+        required: true
+        default: 'http://example.com'
+
+jobs:
+  Updating:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set date variable
+        id: date
+        run: echo "DATE=$(date +'%Y/%m/%d')" >> $GITHUB_ENV
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Public Update
+        id: release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Update ${{ env.DATE }}
+          tag_name: LICH_UPDATE-${{ env.DATE }}
+          body: |
+            ### Update Info
+            **ROM DATE:** ${{ env.DATE }}
+            **OneUI Version:** 6.1.1
+            #### ROM
+            - [LichUI](${{ env.ROM_URL }})   
+            #### FIRMWARE STOCK
+            - [Bootloader's](https://github.com/MrDemon-LICH/PROJECT-LichUI/blob/main/bootloader_info.md)
+            - [A546E](${{ env.FW_E_URL }})
+            - [A546B](${{ env.FW_B_URL }})
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          ROM_URL: ${{ github.event.inputs.Rom }}
+          FW_E_URL: ${{ github.event.inputs.Fw_E }}
+          FW_B_URL: ${{ github.event.inputs.Fw_B }}
