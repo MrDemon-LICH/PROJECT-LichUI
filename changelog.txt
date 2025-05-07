@@ -1,5 +1,5 @@
 Update via OTA
-Wallpaper from s23 FE
-Camera mod update
-Filter camera fix
-Minor fixes
+From S23 FE Stable
+Base S711BXXU6EYDA
+Instant Slow-mo in gallery
+Minor Fixes
