@@ -814,13 +814,29 @@
             transform: scale(1.2);
         }
         @media (max-width: 400px) {
-            .slider-container, .slider-content, .slider-content img, .slider-content .changelog-box {
-                max-width: 90vw;
-                min-height: 180px;
-                max-height: 180px;
+            .slider-container {
+                overflow: hidden !important;
+                position: relative !important;
             }
-            .slider-arrow.left { left: -30px; }
-            .slider-arrow.right { right: -30px; }
+            .slider-arrow {
+                width: 32px !important;
+                height: 32px !important;
+                font-size: 1.1em !important;
+                top: 50% !important;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+            .slider-arrow.left {
+                left: 2px !important;
+            }
+            .slider-arrow.right {
+                right: 2px !important;
+            }
+        }
+        @media (max-width: 340px) {
+            .slider-arrow {
+                display: none !important;
+            }
         }
         .download-button i {
             margin-right: 10px;
@@ -1307,7 +1323,7 @@
         document.querySelectorAll('.side-menu-link').forEach(link => {
             link.addEventListener('click', () => {
                 toggleMoreMenu();
-            });
+                });
         });
     </script>
 </body>
