@@ -1,5 +1,6 @@
-Update via OTA
-From S23 FE Stable
+Update Manual
+From S23 FE
 Base S711BXXU6EYDA
-Instant Slow-mo in gallery
+Fix System Warnning from reboot
+Update Bootloader's
 Minor Fixes
