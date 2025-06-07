@@ -1,6 +1,6 @@
 Update Manual
 From S23 FE
-Base S711BXXU6EYDA
+Base S711BXXS7EYE1
 Fix System Warnning from reboot
 Update Bootloader's
 Minor Fixes
