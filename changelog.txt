@@ -1,6 +1,5 @@
-Update Manual
-From S23 FE
-Base S711BXXS7EYE1
-Fix System Warnning from reboot
-Update Bootloader's
-Minor Fixes
+Update OTA
+Optional Update
+Optimizations
+Lite Camera by Arseniy
+Minor fixes
