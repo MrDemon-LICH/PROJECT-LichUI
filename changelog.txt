@@ -1,5 +1,6 @@
-Update OTA
-Optional Update
-Optimizations
-Lite Camera by Arseniy
+Update Manual
+Update bootloader binary D
+Fix Overlays
+Add KnoxPatch
+Add LiveEffect in Gallery 
 Minor fixes
