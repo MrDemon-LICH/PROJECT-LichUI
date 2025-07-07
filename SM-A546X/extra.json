@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "fe": "https://samfw.com/firmware/SM-A546E/EGY/A546EXXUCDYDB",
-      "fb": "https://samfw.com/firmware/SM-A546B/EUX/A546BXXUCDYDB",
+      "fe": "https://samfw.com/firmware/SM-A546E/EGY/A546EXXSDDYF1",
+      "fb": "https://samfw.com/firmware/SM-A546B/EUX/A546BXXSDDYF1",
       "re": "https://github.com/Vaz15k/android_device_samsung_a54x/releases/download/2024-12-08/OFRP-SM-A546E_2024-12-08.tar",
       "rb": "https://github.com/Vaz15k/android_device_samsung_a54x/releases/download/2024-12-08/OFRP-SM-A546B_2024-12-08.tar",
-      "ve": "https://github.com/Vaz15k/proprietary_vendor_samsung_a54x/releases/download/A546EXXUCDYDB_OJM/A546EXXUCDYDB_patched_vbmeta.tar",
-      "vb": "https://github.com/Vaz15k/proprietary_vendor_samsung_a54x/releases/download/A546BXXUCDYDB_OXM/A546BXXUCDYDB_patched_vbmeta.tar"
+      "ve": "https://github.com/Vaz15k/proprietary_vendor_samsung_a54x/releases/download/A546EXXSDDYF1_ODM/A546EXXSDDYF1_patched_vbmeta.tar",
+      "vb": "https://github.com/Vaz15k/proprietary_vendor_samsung_a54x/releases/download/A546BXXSDDYF1_OXM/A546BXXSDDYF1_patched_vbmeta.tar"
     }
   ]
 }
