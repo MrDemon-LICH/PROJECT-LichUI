@@ -1,6 +1,6 @@
-Update Manual
-Update bootloader binary D
-Fix Overlays
-Add KnoxPatch
-Add LiveEffect in Gallery 
+Update OTA
+Base S711BXXS8EYEA
+Enable live blur
+Fix Routines
+Delete China apps
 Minor fixes
