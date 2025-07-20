@@ -1,14 +1,14 @@
 {
   "response": [
     {
-      "builddate": 20250706,
-      "md5": "24026e00046127f99067bfade5ed05d6",
+      "builddate": 20250720,
+      "md5": "801d1ba27bc4cb733e339f963f70c118",
       "patch": 20250601,
-      "size": 5546111250,
+      "size": 5569472933,
       "bootloaderE": "A546EXXSDDYF1",
       "bootloaderB": "A546BXXSDDYF1",
-      "url": "https://pixeldrain.com/api/file/[id]?download",
-      "version": "5.0.5"
+      "url": "https://sourceforge.net/projects/lichrom/files/SM-A546X/LichUI_5.0.6_a54x.zip/download",
+      "version": "5.0.6"
     }
   ]
 }
