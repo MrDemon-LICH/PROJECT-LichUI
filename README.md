@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img loading="lazy" src="readme-res/Banner.png" width="900"/>
+  <img loading="lazy" src="readme-res/Banner.png" width="700"/>
 </h1>
 
 <p align="center"><strong><i>LichUI custom firmware for Galaxy</i></strong></p>
