@@ -1,7 +1,7 @@
 <h1 align="center">
   <img loading="lazy" src="readme-res/Banner.png" width="700"/>
   <p align="center">
-  <a href="https://github.com/MrDemon-LICH/PROJECT-LichUI/commits/fifteen"><img loading="lazy" src="https://img.shields.io/github/last-commit/MrDemon-LICH/PROJECT-LichUI/main?style=for-the-badge"/></a>
+  <a href="https://github.com/MrDemon-LICH/PROJECT-LichUI/commits/main"><img loading="lazy" src="https://img.shields.io/github/last-commit/MrDemon-LICH/PROJECT-LichUI/main?style=for-the-badge"/></a>
   <a href="https://github.com/MrDemon-LICH/PROJECT-LichUI/stargazers"><img loading="lazy" src="https://img.shields.io/github/stars/MrDemon-LICH/PROJECT-LichUI?style=for-the-badge"/></a>
   <a href="https://github.com/MrDemon-LICH/PROJECT-LichUI/graphs/contributors"><img loading="lazy" src="https://img.shields.io/github/contributors/MrDemon-LICH/PROJECT-LichUI?style=for-the-badge"/></a>
 </p>
