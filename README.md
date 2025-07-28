@@ -4,8 +4,10 @@
   <a href="https://github.com/MrDemon-LICH/PROJECT-LichUI/commits/main"><img loading="lazy" src="https://img.shields.io/github/last-commit/MrDemon-LICH/PROJECT-LichUI/main?style=for-the-badge"/></a>
   <a href="https://github.com/MrDemon-LICH/PROJECT-LichUI/stargazers"><img loading="lazy" src="https://img.shields.io/github/stars/MrDemon-LICH/PROJECT-LichUI?style=for-the-badge"/></a>
   <a href="https://github.com/MrDemon-LICH/PROJECT-LichUI/graphs/contributors"><img loading="lazy" src="https://img.shields.io/github/contributors/MrDemon-LICH/PROJECT-LichUI?style=for-the-badge"/></a>
+  <a href="#"><img loading="lazy" src="https://img.shields.io/badge/OneUI-7.0-blueviolet?style=for-the-badge"/></a>
 </p>
 </h1>
+
 
 <p align="center";"><strong><i>LichUI custom firmware for Galaxy</i></strong></p>
 
@@ -20,31 +22,25 @@
 ## What is LichUI?
 LichUI is a custom firmware currently in development for the Samsung Galaxy A54 5G. Built on the latest version of Samsung's One UI, it adds exclusive features and optimizations to deliver the best possible user experience.
 
-## Features
-- Based on the latest stable Galaxy S23 FE firmware
-- Galaxy AI support <img width="20" alt="GalaxyAI" src="https://github.com/user-attachments/assets/24cbb2f6-32dc-4cad-851e-27b1473757c4" />
-- High end animations
-- Native/live blur support
-- AOD clock transition support
-- Adaptive color tone support
-- Adaptive refresh rate support
-- Extra brightness support
-- Picture remaster support
-- Object, shadow and reflection eraser support
-- Image clipper support
-- Smart Suggestions widget
-- Multi user support
-- Samsung DeX support
-- Camera privacy toggle support
-- Debloated from useless system services/additional apps
-- Integrated OTA updates app
-- [BluetoothLibraryPatcher](https://github.com/3arthur6/BluetoothLibraryPatcher) included
-- China Device Care app included
-- [Patched GoodLock](https://github.com/corsicanu/goodlock_dump) app included
-- Secure Folder
-- Auto Pin Confirm
-- Extra Lich Settings
-- Ilimited Google Photos
+## Key Features
+LichUI brings the best of Samsung and exclusive enhancements:
+
+| Feature               | Description                                         | Status   |
+|----------------------|-----------------------------------------------------|----------|
+| Private Compiler     | ROM is built privately for security and stability    | ✔️ Active|
+| Galaxy AI            | Full suite of Samsung AI features                   | ✔️ Active|
+| Samsung DeX          | Desktop mode fully supported                        | ✔️ Active|
+| [BluetoothLibraryPatcher](https://github.com/3arthur6/BluetoothLibraryPatcher)     | Enhanced compatibility and stability                | ✔️ Active|
+| Secure Folder        | Secure storage for sensitive data                   | ✔️ Active|
+| OTA Updates          | Integrated automatic updates                        | ✔️ Active|
+| Multi-user           | Multiple user profiles supported                    | ✔️ Active|
+| [Patched GoodLock](https://github.com/corsicanu/goodlock_dump)     | Advanced UI customization tools included            | ✔️ Active|
+| Camera Mod           | Extra setting for camera and optimizations          | ✔️ Active|
+| NowBrief             | Personalized summary of the day                     | ✔️ Active|
+| LichUI Settings      | Extra settings                                      | ❌ Inactive|
+| AODWallpaper         | Wallpaper in AOD                                    | ❌ Inactive|
+
+*And more: high-end animations, AOD clock transitions, adaptive color tone, adaptive refresh rate, extra brightness, picture remaster, object/shadow/reflection eraser, image clipper, Smart Suggestions widget, camera privacy toggle, debloated system, and more!*
 
 ## Screenshots:
 [<kbd> <br> 📸 Screenshots <br> </kbd>](https://mrdemon-lich.github.io/PROJECT-LichUI/screenshot.html)
@@ -52,38 +48,100 @@ LichUI is a custom firmware currently in development for the Samsung Galaxy A54 
 ## How to install LichUI?
 [<kbd> <br> ⚙️ Installation guide <br> </kbd>](https://mrdemon-lich.github.io/PROJECT-LichUI/install.html)
 
-## Copyright Notice
+## Copyright
 
-Copyright © 2025 MrDemon-LICH. All rights reserved.
+© 2025 MrDemon-LICH. All rights reserved.
 
-For LichUI all rights to the software are reserved to the owner.
-
-The following conditions apply:
-
-1. **No Modifications:** The software may not be modified in any way. This includes but is not limited to changing, adding, or removing any part of the software's code or functionality.
-
-2. **No Redistribution:** The software may not be redistributed in any form. This includes but is not limited to renaming, selling, or including the software as part of another project.
-
-3. **No Picking:** No parts, pieces, or components of the software may be extracted and submitted to other projects. This includes, but is not limited to, code snippets, functions, and released binaries.
-
-4. **No Claim to Succession:** Any fork of the software that was created before the license change may not claim to be an official or unofficial successor to the project. This includes but is not limited to using the project's name, branding, or reputation to imply a connection to the original project.
+- LichUI is a privately compiled ROM, intended for personal use only.
+- Modification, redistribution, or any unauthorized use of the ROM or its components is strictly prohibited.
+- Forks, derivatives, or successor projects are not allowed without explicit permission.
 
 ## Credits
-A big thanks goes to the following for their invaluable contributions in no particular order:
-- **[salvogiangri](https://github.com/salvogiangri)** for his [UN1CA](https://github.com/salvogiangri/UN1CA/tree/main) which inspired this project, inspired this repository, inspired OTA Updater, and for UN1CA patches.
-- **[GalaxyApks](https://t.me/galaxyapks)** for mods
-- **[Flylarb_meow](https://t.me/Flylarb_meow)** for his AodWallpaper, help and support
-- **[Winner](https://t.me/@Winnerxd1001)** for his help and support
-- **[ShaDisNX255](https://github.com/ShaDisNX255)** for his help and support
-- **[LineageOS Team](https://www.lineageos.org/)** for Updater-binary
-- **[corsicanu](https://github.com/corsicanu)** for GoodLock Patched
-- **[Vaz15k](https://github.com/Vaz15k)** for Ofox, SHRP, and Vbmeta
-- **[3arthur6](https://github.com/3arthur6)** for BluetoothLibraryPatcher
-- **[Arseniy](https://t.me/Arsenybespomestnov)** for Camera video modes
-- **[desukia](https://t.me/Desukia)** for help and more
-- **[Sarp](https://t.me/Kozilyy)** for help and more
-- **[ldt](https://github.com/ldtdev0/)** for LichUI's brand design
-- *All people for using LichUI ❤️*
+
+A huge thanks to the following contributors and supporters:
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/salvogiangri.png?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://github.com/salvogiangri">salvogiangri</a><br>
+      <sub>UN1CA inspiration, OTA, patches</sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/3arthur6.png?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://github.com/3arthur6">3arthur6</a><br>
+      <sub>BluetoothLibraryPatcher</sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/corsicanu.png?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://github.com/corsicanu">corsicanu</a><br>
+      <sub>GoodLock Patched</sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/ldtdev0.png?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://github.com/ldtdev0">ldt</a><br>
+      <sub>LichUI brand design</sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/ShaDisNX255.png?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://github.com/ShaDisNX255">ShaDisNX255</a><br>
+      <sub>Help & support</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/Vaz15k.png?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://github.com/Vaz15k">Vaz15k</a><br>
+      <sub>Ofox, SHRP, Vbmeta</sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/lineageos.png?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://github.com/lineageos">LineageOS Team</a><br>
+      <sub>Updater-binary</sub>
+    </td>
+    <td align="center">
+      <img src="https://t.me/i/userpic/320/Flylarb_meow.jpg?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://t.me/Flylarb_meow">Flylarb_meow</a><br>
+      <sub>AodWallpaper, help & support</sub>
+    </td>
+    <td align="center">
+      <img src="https://t.me/i/userpic/320/Winner3157.jpg?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://t.me/Winner3157">Winner</a><br>
+      <sub>Help & support</sub>
+    </td>
+    <td align="center">
+      <img src="https://t.me/i/userpic/320/yagzie.jpg?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://t.me/yagzie">Yagzie</a><br>
+      <sub>Help & support</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://t.me/i/userpic/320/leynox64.jpg?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://t.me/leynox64">Leynox64</a><br>
+      <sub>Help & support</sub>
+    </td>
+    <td align="center">
+      <img src="https://t.me/i/userpic/320/Arsenybespomestnov.jpg?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://t.me/Arsenybespomestnov">Arseniy</a><br>
+      <sub>Camera video modes</sub>
+    </td>
+    <td align="center">
+      <img src="https://t.me/i/userpic/320/Desukia.jpg?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://t.me/Desukia">Desukia</a><br>
+      <sub>Help & more</sub>
+    </td>
+    <td align="center">
+      <img src="https://t.me/i/userpic/320/Kozilyy.jpg?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://t.me/Kozilyy">Sarp</a><br>
+      <sub>Help & more</sub>
+    </td>
+    <td align="center">
+      <img src="https://api.dicebear.com/7.x/personas/svg?seed=users" width="64" height="64" style="border-radius:50%"><br>
+      <b>All users of LichUI</b>
+    </td>
+  </tr>
+</table>
 
 <h1 align="center">
   <img loading="lazy" src="readme-res/Footer.png"/>
