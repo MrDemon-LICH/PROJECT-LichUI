@@ -1,0 +1,11 @@
+{
+  "response": [
+    {
+      "device": "SM-A546E",
+      "github": "https://samfw.com/firmware/SM-A546E/EGY/A546EXXSDDYF1",
+      "kernel": "https://samfw.com/firmware/SM-A546B/EUX/A546BXXSDDYF1",
+      "wallpaper": "https://github.com/Vaz15k/android_device_samsung_a54x/releases/download/2024-12-08/OFRP-SM-A546E_2024-12-08.tar",
+      "module1": "test.com",
+    }
+  ]
+}
