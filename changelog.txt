@@ -1,6 +1,5 @@
-Update OTA
-Base S711BXXS8EYEA
-Enable live blur
-Fix Routines
-Delete China apps
-Minor fixes
+Update Manual
+Base S711BXXS9EYG1
+Disable live blur
+Update from last bootloader
+Add Lich App
