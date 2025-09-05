@@ -87,13 +87,13 @@ A huge thanks to the following contributors and supporters:
       <a href="https://github.com/ldtdev0">ldt</a><br>
       <sub>LichUI brand design</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <img src="https://github.com/ShaDisNX255.png?size=80" width="64" height="64" style="border-radius:50%"><br>
       <a href="https://github.com/ShaDisNX255">ShaDisNX255</a><br>
       <sub>Help & support</sub>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <img src="https://github.com/Vaz15k.png?size=80" width="64" height="64" style="border-radius:50%"><br>
       <a href="https://github.com/Vaz15k">Vaz15k</a><br>
@@ -114,16 +114,16 @@ A huge thanks to the following contributors and supporters:
       <a href="https://t.me/Winner3157">Winner</a><br>
       <sub>Help & support</sub>
     </td>
-    <td align="center">
-      <img src="https://t.me/i/userpic/320/yagzie.jpg?size=80" width="64" height="64" style="border-radius:50%"><br>
-      <a href="https://t.me/yagzie">Yagzie</a><br>
-      <sub>Help & support</sub>
-    </td>
   </tr>
   <tr>
     <td align="center">
       <img src="https://t.me/i/userpic/320/leynox64.jpg?size=80" width="64" height="64" style="border-radius:50%"><br>
       <a href="https://t.me/leynox64">Leynox64</a><br>
+      <sub>Help & support</sub>
+    </td>
+    <td align="center">
+      <img src="https://t.me/i/userpic/320/yagzie.jpg?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://t.me/yagzie">Yagzie</a><br>
       <sub>Help & support</sub>
     </td>
     <td align="center">
