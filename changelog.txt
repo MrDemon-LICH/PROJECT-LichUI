@@ -1,5 +1,8 @@
 Update Manual
-Base S711BXXS9EYG1
-Disable live blur
+Base S711BXXSAEYH1
 Update from last bootloader
-Add Lich App
+FingerPrint Animations
+Overlay Fix
+Fix device model
+Add more apps in Dual Messenger
+Disable secure screenshot
