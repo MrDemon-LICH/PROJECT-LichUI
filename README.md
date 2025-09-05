@@ -68,6 +68,11 @@ A huge thanks to the following contributors and supporters:
       <sub>UN1CA inspiration, OTA, patches</sub>
     </td>
     <td align="center">
+      <img src="https://github.com/ExtremeXT.png?size=80" width="64" height="64" style="border-radius:50%"><br>
+      <a href="https://github.com/ExtremeXT">ExtremeXT</a><br>
+      <sub>For patches</sub>
+    </td>    
+    <td align="center">
       <img src="https://github.com/3arthur6.png?size=80" width="64" height="64" style="border-radius:50%"><br>
       <a href="https://github.com/3arthur6">3arthur6</a><br>
       <sub>BluetoothLibraryPatcher</sub>
@@ -129,11 +134,6 @@ A huge thanks to the following contributors and supporters:
     <td align="center">
       <img src="https://t.me/i/userpic/320/Desukia.jpg?size=80" width="64" height="64" style="border-radius:50%"><br>
       <a href="https://t.me/Desukia">Desukia</a><br>
-      <sub>Help & more</sub>
-    </td>
-    <td align="center">
-      <img src="https://t.me/i/userpic/320/Kozilyy.jpg?size=80" width="64" height="64" style="border-radius:50%"><br>
-      <a href="https://t.me/Kozilyy">Sarp</a><br>
       <sub>Help & more</sub>
     </td>
     <td align="center">
