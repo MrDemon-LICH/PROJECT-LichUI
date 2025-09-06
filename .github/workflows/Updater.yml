@@ -2,19 +2,6 @@ name: Updater Helper
 
 on:
   workflow_dispatch:
-    inputs:
-      Rom:
-        description: 'Link Rom'
-        required: true
-        default: 'http://example.com'
-      Fw_E:
-        description: 'Firmware E'
-        required: true
-        default: 'http://example.com'
-      Fw_B:
-        description: 'Firmware B'
-        required: true
-        default: 'http://example.com'
 
 jobs:
   Updating:
@@ -43,12 +30,8 @@ jobs:
             **ROM DATE:** ${{ env.DATE }}
             **OneUI Version:** 7.0
             #### ROM
-            - [LichUI](${{ env.ROM_URL }})   
-            #### FIRMWARE STOCK
-            - [A546E](${{ env.FW_E_URL }})
-            - [A546B](${{ env.FW_B_URL }})
+            - [LichUI](https://sourceforge.net/projects/lichrom/files/SM-A546X/)   
+            #### Thanks for using LichUI
+
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          ROM_URL: ${{ github.event.inputs.Rom }}
-          FW_E_URL: ${{ github.event.inputs.Fw_E }}
-          FW_B_URL: ${{ github.event.inputs.Fw_B }}
