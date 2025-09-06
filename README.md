@@ -42,11 +42,8 @@ LichUI brings the best of Samsung and exclusive enhancements:
 
 *And more: high-end animations, AOD clock transitions, adaptive color tone, adaptive refresh rate, extra brightness, picture remaster, object/shadow/reflection eraser, image clipper, Smart Suggestions widget, camera privacy toggle, debloated system, and more!*
 
-## Screenshots:
-[<kbd> <br> 📸 Screenshots <br> </kbd>](https://mrdemon-lich.github.io/PROJECT-LichUI/screenshot.html)
-
 ## How to install LichUI?
-[<kbd> <br> ⚙️ Installation guide <br> </kbd>](https://mrdemon-lich.github.io/PROJECT-LichUI/install.html)
+[<kbd> <br> ⚙️ Installation guide <br> </kbd>](https://mrdemon-lich.github.io/PROJECT-LichUI/documentation.html)
 
 ## Copyright
 
