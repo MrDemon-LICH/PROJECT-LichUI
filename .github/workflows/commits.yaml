@@ -1,0 +1,44 @@
+name: Commits Update
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'changelog.txt'
+      - 'documentation.html'
+      - 'index.html'
+      - 'manifest.json'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get commit info
+        run: |
+          echo "COMMIT_MSG=$(git log -1 --pretty=%B)" >> $GITHUB_ENV
+          echo "COMMIT_AUTHOR=$(git log -1 --pretty=%an)" >> $GITHUB_ENV
+          echo "COMMIT_DATE=$(git log -1 --date=format:'%Y-%m-%d %H:%M' --pretty=%ad)" >> $GITHUB_ENV
+          echo "COMMIT_URL=https://github.com/${{ github.repository }}/commit/${{ github.sha }}" >> $GITHUB_ENV
+          echo "CHANGED_FILE=$(git diff-tree --no-commit-id --name-only -r HEAD | head -n 1)" >> $GITHUB_ENV
+
+      - name: Send Telegram notification
+        run: |
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendPhoto \
+            -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+            -d message_thread_id=${{ secrets.TELEGRAM_THREAD_COMMIT }} \
+            -d parse_mode=HTML \
+            -d photo="https://github.com/MrDemon-LICH/PROJECT-LichUI/blob/main/readme-res/Banner.png" \
+            -d caption="✨ <b>New Commit</b>
+
+            <b>Commit:</b> ${{ env.COMMIT_MSG }}
+            <b>Author:</b> ${{ env.COMMIT_AUTHOR }}
+            <b>Date:</b> ${{ env.COMMIT_DATE }}
+           
+            📄 File updated: <code>${{ env.CHANGED_FILE }}</code>
+
+            <b>Link:</b> <blockquote>${{ env.COMMIT_URL }}</blockquote> "
