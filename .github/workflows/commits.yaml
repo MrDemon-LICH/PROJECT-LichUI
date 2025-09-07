@@ -24,7 +24,6 @@ jobs:
           echo "COMMIT_AUTHOR=$(git log -1 --pretty=%an)" >> $GITHUB_ENV
           echo "COMMIT_DATE=$(git log -1 --date=format:'%Y-%m-%d %H:%M' --pretty=%ad)" >> $GITHUB_ENV
           echo "COMMIT_URL=https://github.com/${{ github.repository }}/commit/${{ github.sha }}" >> $GITHUB_ENV
-          echo "CHANGED_FILE=$(git diff-tree --no-commit-id --name-only -r HEAD | head -n 1)" >> $GITHUB_ENV
 
       - name: Send Telegram notification
         run: |
@@ -39,6 +38,4 @@ jobs:
             <b>Author:</b> ${{ env.COMMIT_AUTHOR }}
             <b>Date:</b> ${{ env.COMMIT_DATE }}
            
-            📄 File updated: <code>${{ env.CHANGED_FILE }}</code>
-
             <b>Link:</b> <blockquote>${{ env.COMMIT_URL }}</blockquote> "
