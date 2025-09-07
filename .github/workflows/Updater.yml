@@ -14,6 +14,26 @@ jobs:
         id: date
         run: echo "DATE=$(date +'%Y/%m/%d')" >> $GITHUB_ENV
 
+      - name: Send update with image + caption
+        run: |
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendPhoto \
+          -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+          -d message_thread_id=${{ secrets.TELEGRAM_THREAD_ID }} \
+          -d parse_mode=HTML \
+          -d photo="https://github.com/MrDemon-LICH/PROJECT-LichUI/blob/main/readme-res/Banner.png" \
+          -d caption="✨ <b>NEW UPDATE [${{ env.DATE }}]</b>
+
+          <b>Download:</b>
+          <blockquote>https://mrdemon-lich.github.io/PROJECT-LichUI/index.html</blockquote>
+          <b>Old Versions:</b>
+          <blockquote>https://sourceforge.net/projects/lichrom/files/SM-A546X/</blockquote>
+          <b>Changelog:</b>
+          <blockquote>https://github.com/MrDemon-LICH/PROJECT-LichUI/blob/main/changelog.txt</blockquote>
+          
+          Thank you for using and trusting <b>LichUI ❤</b>
+          
+          © 2025 MrDemon-LICH. Prohibited: Modifications, Redistribution, and Partial Usage"
+
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
