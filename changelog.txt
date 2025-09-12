@@ -1,8 +1,5 @@
-Update Manual
-Base S711BXXSAEYH1
-Update from last bootloader
-FingerPrint Animations
-Overlay Fix
-Fix device model
-Add more apps in Dual Messenger
-Disable secure screenshot
+Update OTA
+Fix Dual Messenger
+Fix Extra Brightness
+Add AppLock
+Rom is Signed now
