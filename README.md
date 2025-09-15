@@ -138,6 +138,13 @@ A huge thanks to the following contributors and supporters:
       <b>All users of LichUI</b>
     </td>
   </tr>
+  <tr>
+    <td align="center">
+      <img src="https://api.dicebear.com/7.x/personas/svg?seed=users" width="64" height="64" style="border-radius:50%"><br>
+      <b>@DavidArsene</b>
+      <sub>For DAAgent Patch</sub>
+    </td>
+  </tr>
 </table>
 
 <h1 align="center">
