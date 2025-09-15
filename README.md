@@ -141,7 +141,7 @@ A huge thanks to the following contributors and supporters:
   <tr>
     <td align="center">
       <img src="https://api.dicebear.com/7.x/personas/svg?seed=users" width="64" height="64" style="border-radius:50%"><br>
-      <a>@DavidArsene</a>
+      <a>@DavidArsene</a><br>
       <sub>For DAAgent Patch</sub>
     </td>
   </tr>
