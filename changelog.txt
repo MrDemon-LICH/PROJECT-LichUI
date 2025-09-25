@@ -1,5 +1,6 @@
 Update OTA
-Fix Dual Messenger
-Fix Extra Brightness
-Add AppLock
-Rom is Signed now
+Fix animated photo in camera
+Add Lich Setting
+Add DeKnox
+Add Network Speed
+Minor Fixes
