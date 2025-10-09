@@ -983,7 +983,7 @@
         async function loadManifestData() {
             try {
                 console.log('Loading manifest data...');
-                const response = await fetch('https://raw.githubusercontent.com/MrDemon-LICH/PROJECT-LichUI/refs/heads/main/SM-A546X/manifest.json');
+                const response = await fetch('https://raw.githubusercontent.com/MrDemon-LICH/PROJECT-LichUI/refs/heads/main/Update/manifest.json');
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -1035,7 +1035,7 @@
         async function loadDownloadLinks() {
             try {
                 console.log('Loading download links...');
-                const response = await fetch('https://raw.githubusercontent.com/MrDemon-LICH/PROJECT-LichUI/refs/heads/main/SM-A546X/extra.json');
+                const response = await fetch('https://raw.githubusercontent.com/MrDemon-LICH/PROJECT-LichUI/refs/heads/main/Update/a54x/extras.json');
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
