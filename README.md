@@ -4,7 +4,7 @@
   <a href="https://github.com/MrDemon-LICH/PROJECT-LichUI/commits/main"><img loading="lazy" src="https://img.shields.io/github/last-commit/MrDemon-LICH/PROJECT-LichUI/main?style=for-the-badge"/></a>
   <a href="https://github.com/MrDemon-LICH/PROJECT-LichUI/stargazers"><img loading="lazy" src="https://img.shields.io/github/stars/MrDemon-LICH/PROJECT-LichUI?style=for-the-badge"/></a>
   <a href="https://github.com/MrDemon-LICH/PROJECT-LichUI/graphs/contributors"><img loading="lazy" src="https://img.shields.io/github/contributors/MrDemon-LICH/PROJECT-LichUI?style=for-the-badge"/></a>
-  <a href="#"><img loading="lazy" src="https://img.shields.io/badge/OneUI-7.0-blueviolet?style=for-the-badge"/></a>
+  <a href="#"><img loading="lazy" src="https://img.shields.io/badge/OneUI-8.0-blueviolet?style=for-the-badge"/></a>
 </p>
 </h1>
 
