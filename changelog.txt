@@ -1,6 +1,5 @@
-Update OTA
-Fix animated photo in camera
-Add Lich Setting
-Add DeKnox
-Add Network Speed
+Update Manual
+OneUI 8.0
+Base S711BXXUAFYI6
+No Lich Setting
 Minor Fixes
