@@ -1,10 +1,10 @@
 {
   "response": [
     {
-      "builddate": 20251009,
-      "md5": "914a506cfab87b17b001f5e842901e56",
+      "builddate": 20251011,
+      "md5": "6c0174bcd0515f92f2b780e1886fdb8d",
       "patch": 20250901,
-      "size": 5621542847,
+      "size": 5621543939,
       "bl": "XXSFDYH1",
       "url": "https://sourceforge.net/projects/lichrom/files/SM-A546X/LichUI_5.1.1_a54x-signed.zip",
       "version": "5.1.1"
