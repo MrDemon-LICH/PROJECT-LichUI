@@ -806,6 +806,24 @@
                                     </svg>
                                 </button>
                             </div>
+
+                            <div class="file-item">
+                                <div class="file-info">
+                                    <span class="file-icon">🔓</span>
+                                    <div class="file-details">
+                                        <h4>BL patch</h4>
+                                        <p>bootloader patch for UI8</p>
+                                    </div>
+                                </div>
+                                <button class="btn-download" onclick="downloadFile('SM-A546E', 'Patch')">
+                                    <span>Download</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
@@ -868,6 +886,24 @@
                                     </div>
                                 </div>
                                 <button class="btn-download" onclick="downloadFile('SM-A546B', 'Firmware')">
+                                    <span>Download</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="file-item">
+                                <div class="file-info">
+                                    <span class="file-icon">🔓</span>
+                                    <div class="file-details">
+                                        <h4>BL patch</h4>
+                                        <p>bootloader patch for UI8</p>
+                                    </div>
+                                </div>
+                                <button class="btn-download" onclick="downloadFile('SM-A546B', 'Patch')">
                                     <span>Download</span>
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1277,6 +1313,10 @@
                         downloadUrl = downloadLinks.fe;
                         fileName = 'SM-A546E_Firmware';
                         break;
+                    case 'Patch':
+                        downloadUrl = downloadLinks.pe;
+                        fileName = 'SM-A546E_bootloader_path';
+                        break;
                 }
             } else if (deviceModel === 'SM-A546B') {
                 switch (fileType) {
@@ -1291,6 +1331,10 @@
                     case 'Firmware':
                         downloadUrl = downloadLinks.fb;
                         fileName = 'SM-A546B_Firmware';
+                        break;
+                    case 'Patch':
+                        downloadUrl = downloadLinks.pb;
+                        fileName = 'SM-A546B_bootloader_path';
                         break;
                 }
             }

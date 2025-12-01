@@ -464,6 +464,7 @@
                 <div class="tabs">
                     <button class="tab active" onclick="switchTab('requirements')">Requirements</button>
                     <button class="tab" onclick="switchTab('install')">Install</button>
+                    <button class="tab" onclick="switchTab('bootloader')">Unlock BL</button>
                     <button class="tab" onclick="switchTab('ota')">OTA Updates</button>
                 </div>
 
@@ -572,6 +573,29 @@
                     </div>
                 </div>
 
+                <div id="bootloader-content" class="tab-content active">
+                    <div class="content-text">
+<h4>1. Download last UI7 stock and flash with odin</h4>
+• <a href="https://samfw.com/firmware/SM-A546E/EGY/A546EXXSFDYI1">SM-A546E</a>
+• <a href="https://samfw.com/firmware/SM-A546B/EUX/A546BXXSFDYI1">SM-A546B</a>
+
+<h4>2. Check bootloader unlock in UI7</h4>
+If you flash the latest UI7, check the following:
+• If under OEM unlocking in Developer options it says something like "Autoblocker" > find Autoblocker in settings and disable it.
+• If the bootloader is unlocked in UI7, check the "Press power key to continue" screen at startup.
+<img src="readme-res/bootloader/unlock.jpg" alt="Bootloader Unlock" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+
+<h4>3. Flash UI8 with BL patch</h4>
+Download firmware stock and bl in <a href="https://mrdemon-lich.github.io/PROJECT-LichUI/index.html#descargas">Add-ons</a>
+• Use BL patch in BL seccion in Odin
+<img src="readme-res/odin/bl_patch.jpg" alt="Bootloader Unlock Odin" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+
+<h4>4. Check that everything is okay</h4>
+• Bootloader unlock
+
+                    </div>
+                </div>
+
                 <div id="ota-content" class="tab-content">
                     <div class="content-text">
 <h3>OTA Updater for LichUI</h3>
@@ -586,11 +610,11 @@ However, there are updates that will require a clean installation, when there is
 
 <strong>Updates via OTA</strong>
 • Sames Bootloader and Binary
-<img src="readme-res/odin/ota_normal.jpg" alt="Odin Recovery Selection" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><br>
+<img src="readme-res/Updater/ota_normal.jpg" alt="Odin Recovery Selection" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><br>
 
 <strong>Updates Manual</strong>
 • Different bootloader and binary
-<img src="readme-res/odin/ota_manual.jpg" alt="Odin Recovery Selection" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><br>
+<img src="readme-res/Updater/ota_manual.jpg" alt="Odin Recovery Selection" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><br>
 
 <strong>Requirements for OTA App</strong>
 • Root accesss (Magisk, Ksu, etc)

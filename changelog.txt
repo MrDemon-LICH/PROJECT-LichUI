@@ -1,5 +1,9 @@
 Update Manual
 OneUI 8.0
-Base S711BXXUAFYI6
-No Lich Setting
-Minor Fixes
+Base S901BXXUIGYI7
+Add Lich Setting
+Secure Folder fix
+Add Audio Eraser AI
+Add AppLock
+FingerPrint Animation
+S25U wallpaper
