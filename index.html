@@ -52,6 +52,17 @@
             padding: 0 20px;
         }
 
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            max-width: 450px;
+            margin: 16px auto;
+            text-align: center;
+            position:static;
+            color: #856404;
+        }
+
         /* Header */
         .header {
             background-color: var(--bg-secondary);
@@ -737,7 +748,9 @@
             <div class="container">
                 <h2>Add-ons</h2>
                 <p class="section-subtitle">Select your device model and download the complementary files</p>
-                
+                <div class="warning-box">
+                    <strong>⚠️ WARNING:</strong> Read bootloader unlock in documentation.<br>
+                </div>
                 <div class="devices-grid">
                     <!-- SM-A546E -->
                     <div class="device-card">
