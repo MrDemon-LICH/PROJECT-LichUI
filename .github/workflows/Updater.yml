@@ -48,7 +48,7 @@ jobs:
           body: |
             ### Update Info
             **ROM DATE:** ${{ env.DATE }}
-            **OneUI Version:** 7.0
+            **OneUI Version:** 8.0
             #### ROM
             - [LichUI](https://sourceforge.net/projects/lichrom/files/SM-A546X/)   
             #### Thanks for using LichUI
