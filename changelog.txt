@@ -1,9 +1,9 @@
-Update Manual
+Update OTA
 OneUI 8.0
-Base S901BXXUIGYI7
-Add Lich Setting
-Secure Folder fix
-Add Audio Eraser AI
-Add AppLock
-FingerPrint Animation
-S25U wallpaper
+Base S901BXXSKGYK5
+Update Lich Setting
+Add Battery Info
+November segurity patch
+Reboot menu in LichUI settings - credit for Salvogiangri
+Add PIF and Keybox - credit for Salvogiangri
+Google Photo unlimited option - credit for Salvogiangri
