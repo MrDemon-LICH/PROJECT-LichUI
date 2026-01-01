@@ -1,13 +1,13 @@
 {
   "response": [
     {
-      "builddate": 20251201,
-      "md5": "95f2228bac70dd3c1b6fb68be10366a4",
-      "patch": 20250901,
-      "size": 6547819262,
+      "builddate": 20251231,
+      "md5": "60a6276da5479f286f8e8a9e6b0ef543",
+      "patch": 20251101,
+      "size": 6547889793,
       "bl": "XXUFEYI4",
       "url": "https://pixeldrain.com/api/file/[id]?download",
-      "version": "5.1.2"
+      "version": "5.1.3"
     }
   ]
 }
