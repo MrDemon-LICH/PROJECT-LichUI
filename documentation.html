@@ -238,10 +238,9 @@
 
         .content-text {
             font-size: 16px;
-            line-height: 1.7;
             color: var(--text-primary);
             transition: color 0.3s ease;
-            white-space: pre-line;
+            margin-top: 0px;
         }
 
         .content-text h3 {
@@ -413,6 +412,9 @@
                 border-left-color: #0969da;
             }
         }
+        .content-text .spaced {
+            margin-top: 24px;
+        }
     </style>
 </head>
 <body>
@@ -466,163 +468,190 @@
                     <button class="tab" onclick="switchTab('install')">Install</button>
                     <button class="tab" onclick="switchTab('bootloader')">Unlock BL</button>
                     <button class="tab" onclick="switchTab('ota')">OTA Updates</button>
+                    <button class="tab" onclick="switchTab('kernel')">Change Kernel</button>
                 </div>
 
                 <div id="requirements-content" class="tab-content active">
                     <div class="content-text">
-<h4>Device Requirements</h4>
-• Samsung Galaxy A54 5G (SM-A546E or SM-A546B)
-• Stock firmware with the required bootloader 
-• Unlocked bootloader
+                        <h4>Device Requirements</h4>
+                        <p>• Samsung Galaxy A54 5G (SM-A546E or SM-A546B)</p>
+                        <p>• Stock firmware with the required bootloader </p>
+                        <p>• Unlocked bootloader</p>
 
-<h4>PC Requirements</h4>
-• Windows 10 or Windows 11 (64-bit recommended)
-• Odin (Samsung flashing tool)
-• Samsung USB Drivers
+                        <h4>PC Requirements</h4>
+                        <p>• Windows 10 or Windows 11 (64-bit recommended)</p>
+                        <p>• Odin (Samsung flashing tool)</p>
+                        <p>• Samsung USB Drivers</p>
 
-<h4>Recovery Requirements:</h4>
-• TWRP (Team Win Recovery Project) or
-• OrangeFox Recovery
-• Compatible with your device model
+                        <h4>Recovery Requirements:</h4>
+                        <p>• TWRP (Team Win Recovery Project) or</p>
+                        <p>• OrangeFox Recovery</p>
+                        <p>• Compatible with your device model</p>
 
-<h4>File Requirements</h4>
-• LichUI ROM 
+                        <h4>File Requirements</h4>
+                        <p>• LichUI ROM</p>
 
-<h4>Essential Backups:</h4>
-• Personal data backup (photos, contacts, etc.)
-• App data backup (using Titanium Backup or similar)
-• EFS partition backup (for IMEI restoration)
+                        <h4>Essential Backups:</h4>
+                        <p>• Personal data backup (photos, contacts, etc.)</p>
+                        <p>• App data backup (using Titanium Backup or similar)</p>
+                        <p>• EFS partition backup (for IMEI restoration)</p>
 
-<h4>Backup Storage:</h4>
-• External storage device
-• Cloud storage service
-• PC with sufficient space
-• Multiple backup locations (recommended)
-
+                        <h4>Backup Storage:</h4>
+                        <p>• External storage device</p>
+                        <p>• Cloud storage service</p>
+                        <p>• PC with sufficient space</p>
+                        <p>• Multiple backup locations (recommended)</p>
                     </div>
                 </div>
 
                 <div id="install-content" class="tab-content">
                     <div class="content-text">
-<div class="warning-box">
-<strong>⚠️ WARNING:</strong> Installing custom firmware can damage your device if not done correctly. Proceed at your own risk.<br>
-<strong>⚠️ Guaranteed:</strong> Unlocking the bootloader and installing a custom ROM can void your device's warranty, cause loss of knox, among other things.
-</div>
-<div class="expandable-section">
-    <div class="section-header" onclick="toggleSection('firmware-stock')">
-        <span class="expand-icon">▶</span>
-        <h4>Firmware Stock</h4>
-    </div>
-    <div class="section-content" id="firmware-stock-content">
-        • Samsung Galaxy A54 5G (SM-A546E o SM-A546B)<br>
-        • Download firmware stock required for LichUI (view Add-ons page), and extract<br>
-        • Download and extract Odin<br>
-        • Download and install Samsung Driver<br>
-        • Reboot your device into bootloader mode<br>
-        • Connect your device to your PC via USB<br>
-        • Open Odin and select firmware sctock files; Bl, AP, CP, CSC<br>
-        <img src="readme-res/odin/firmware.png" alt="Odin Firmware Selection" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><br>
-        • Click on Start and wait for the process to finish<br>
-        • Odin finishes autoreboot and skip initial setup<br>
-        • Connect your device to internet<br>
-        • Activate developer options<br>
-        • Enable OEM unlocking and USB debugging<br>
-        • Continue with recovery installation<br>
-    </div>
-</div>
+                        <div class="warning-box">
+                        <strong>⚠️ WARNING:</strong> Installing custom firmware can damage your device if not done correctly. Proceed at your own risk.<br>
+                        <strong>⚠️ Guaranteed:</strong> Unlocking the bootloader and installing a custom ROM can void your device's warranty, cause loss of knox, among other things.
+                        </div>
+                        <div class="expandable-section">
+                            <div class="section-header" onclick="toggleSection('firmware-stock')">
+                                <span class="expand-icon">▶</span>
+                                <h4>Firmware Stock</h4>
+                            </div>
+                            <div class="section-content" id="firmware-stock-content">
+                                • Samsung Galaxy A54 5G (SM-A546E o SM-A546B)<br>
+                                • Download firmware stock required for LichUI (view Add-ons page), and extract<br>
+                                • Download and extract Odin<br>
+                                • Download and install Samsung Driver<br>
+                                • Reboot your device into bootloader mode<br>
+                                • Connect your device to your PC via USB<br>
+                                • Open Odin and select firmware sctock files; Bl, AP, CP, CSC<br>
+                                <img src="readme-res/odin/firmware.png" alt="Odin Firmware Selection" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><br>
+                                • Click on Start and wait for the process to finish<br>
+                                • Odin finishes autoreboot and skip initial setup<br>
+                                • Connect your device to internet<br>
+                                • Activate developer options<br>
+                                • Enable OEM unlocking and USB debugging<br>
+                                • Continue with recovery installation<br>
+                            </div>
+                        </div>
 
-<div class="expandable-section">
-    <div class="section-header" onclick="toggleSection('custom-recovery')">
-        <span class="expand-icon">▶</span>
-        <h4>Custom Recovery</h4>
-    </div>
-    <div class="section-content" id="custom-recovery-content">
-        • Reboot your device into bootloader mode<br>
-        • Connect your device to your PC via USB<br>
-        • Open Odin and select files; Recovery in AP, Vbmeta in USERDATA<br>
-        <img src="readme-res/odin/recovery.png" alt="Odin Recovery Selection" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><br>
-        • In Odin Options uncheck auto-reboot<br>
-        • Click on Start and wait for the process to finish<br>
-        • Now hold down the power and volume down buttons until the device turns off the screen, quickly hold down the power and volume up buttons.<br>
-        • Now in the recovery, you have to do "Format data"<br>
-        • Reboot system and skip initial setup<<br>
-        • Connect your device to internet<br>
-        • Activate developer options<br>
-        • Enable OEM unlocking and USB debugging<br>
-        • Continue with LichUI installation<br>
-    </div>
-</div>
-
-<div class="expandable-section">
-    <div class="section-header" onclick="toggleSection('lichui')">
-        <span class="expand-icon">▶</span>
-        <h4>LichUI</h4>
-    </div>
-    <div class="section-content" id="lichui-content">
-        • For this step you must already have the required stock firmware and custom recovery installed<br>
-        • Download LichUI ROM (LichUI_X.X.X_a54x), and coppy in your device internal storage<br>
-        • Reboot in recovery mode<br>
-        • Flash LichUI ROM<br>
-        • Format data<br>
-        • Reboot system<br>
-        • Enjoy LichUI<br><br>
-        
-    </div>
-</div>
-
-                    </div>
-                </div>
+                        <div class="expandable-section">
+                            <div class="section-header" onclick="toggleSection('custom-recovery')">
+                                <span class="expand-icon">▶</span>
+                                <h4>Custom Recovery</h4>
+                            </div>
+                            <div class="section-content" id="custom-recovery-content">
+                                • Reboot your device into bootloader mode<br>
+                                • Connect your device to your PC via USB<br>
+                                • Open Odin and select files; Recovery in AP, Vbmeta in USERDATA<br>
+                                <img src="readme-res/odin/recovery.png" alt="Odin Recovery Selection" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><br>
+                                • In Odin Options uncheck auto-reboot<br>
+                                • Click on Start and wait for the process to finish<br>
+                                • Now hold down the power and volume down buttons until the device turns off the screen, quickly hold down the power and volume up buttons.<br>
+                                • Now in the recovery, you have to do "Format data"<br>
+                                • Reboot system and skip initial setup<<br>
+                                • Connect your device to internet<br>
+                                • Activate developer options<br>
+                                • Enable OEM unlocking and USB debugging<br>
+                                • Continue with LichUI installation<br>
+                            </div>
+                        </div>  
+                        
+                         <div class="expandable-section">
+                            <div class="section-header" onclick="toggleSection('lichui')">
+                               <span class="expand-icon">▶</span>
+                               <h4>LichUI</h4>
+                            </div>
+                            <div class="section-content" id="lichui-content">
+                                • For this step you must already have the required stock firmware and custom recovery installed<br>
+                                • Download LichUI ROM (LichUI_X.X.X_a54x), and coppy in your device internal storage<br>
+                                • Reboot in recovery mode<br>
+                                • Flash LichUI ROM<br>
+                                • Format data<br>
+                                • Reboot system<br>
+                                • Enjoy LichUI<br><br>
+                            </div>
+                        </div>
+                    </div>   
+                </div>               
 
                 <div id="bootloader-content" class="tab-content active">
                     <div class="content-text">
-<h4>1. Download last UI7 stock and flash with odin</h4>
-• <a href="https://samfw.com/firmware/SM-A546E/EGY/A546EXXSFDYI1">SM-A546E</a>
-• <a href="https://samfw.com/firmware/SM-A546B/EUX/A546BXXSFDYI1">SM-A546B</a>
+                        <h4>1. Download last UI7 stock and flash with odin</h4>
+                        <p>• <a href="https://samfw.com/firmware/SM-A546E/EGY/A546EXXSFDYI1">SM-A546E</a></p>
+                        <p>• <a href="https://samfw.com/firmware/SM-A546B/EUX/A546BXXSFDYI1">SM-A546B</a></p>
 
-<h4>2. Check bootloader unlock in UI7</h4>
-If you flash the latest UI7, check the following:
-• If under OEM unlocking in Developer options it says something like "Autoblocker" > find Autoblocker in settings and disable it.
-• If the bootloader is unlocked in UI7, check the "Press power key to continue" screen at startup.
-<img src="readme-res/bootloader/unlock.jpg" alt="Bootloader Unlock" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <h4>2. Check bootloader unlock in UI7</h4>
+                        <p>If you flash the latest UI7, check the following:</p>
+                        <p>• If under OEM unlocking in Developer options it says something like "Autoblocker" > find Autoblocker in settings and disable it.</p>
+                        <p>• If the bootloader is unlocked in UI7, check the "Press power key to continue" screen at startup.</p>
+                        <img src="readme-res/bootloader/unlock.jpg" alt="Bootloader Unlock" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
 
-<h4>3. Flash UI8 with BL patch</h4>
-Download firmware stock and bl in <a href="https://mrdemon-lich.github.io/PROJECT-LichUI/index.html#descargas">Add-ons</a>
-• Use BL patch in BL seccion in Odin
-<img src="readme-res/odin/bl_patch.jpg" alt="Bootloader Unlock Odin" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <h4>3. Flash UI8 with BL patch</h4>
+                        <p>Download firmware stock and bl in <a href="https://mrdemon-lich.github.io/PROJECT-LichUI/index.html#descargas">Add-ons</a></p>
+                        <p>• Use BL patch in BL seccion in Odin</p>
+                        <img src="readme-res/odin/bl_patch.jpg" alt="Bootloader Unlock Odin" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
 
-<h4>4. Check that everything is okay</h4>
-• Bootloader unlock
+                        <h4>4. Check that everything is okay</h4>
+                        <p>• Bootloader unlock</p>
 
                     </div>
                 </div>
 
                 <div id="ota-content" class="tab-content">
                     <div class="content-text">
-<h3>OTA Updater for LichUI</h3>
+                        <h3>OTA Updater for LichUI</h3>
 
-LichUI includes an OTA (Over-The-Air) updater to keep your device updated with the latest improvements and fixes.
+                        <p>LichUI includes an OTA (Over-The-Air) updater to keep your device updated with the latest improvements and fixes.</p>
+                        
+                        <h4>What are OTA Updates?</h4>
+                        <p>OTA updates allow you to download and install new versions of LichUI directly from your device, without the need for a computer.
+                        However, there are updates that will require a clean installation, when there is a binary change in the stock firmware.</p>
 
-<h4>What are OTA Updates?</h4>
-OTA updates allow you to download and install new versions of LichUI directly from your device, without the need for a computer.
-However, there are updates that will require a clean installation, when there is a binary change in the stock firmware.
+                        <h4>Types of Updates</h4>
 
-<h4>Types of Updates</h4>
+                        <strong>Updates via OTA</strong>
+                        <p>• Sames Bootloader and Binary</p>
+                        <img src="readme-res/Updater/ota_normal.jpg" alt="Odin Recovery Selection" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><br>
 
-<strong>Updates via OTA</strong>
-• Sames Bootloader and Binary
-<img src="readme-res/Updater/ota_normal.jpg" alt="Odin Recovery Selection" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><br>
+                        <strong>Updates Manual</strong>
+                        <p>• Different bootloader and binary</p>
+                        <img src="readme-res/Updater/ota_manual.jpg" alt="Odin Recovery Selection" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><br>
 
-<strong>Updates Manual</strong>
-• Different bootloader and binary
-<img src="readme-res/Updater/ota_manual.jpg" alt="Odin Recovery Selection" style="max-width: 35%; height: auto; margin: 8px 0; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"><br>
+                        <strong>Download speed</strong>
+                        <p>• We currently do not have our own server, which causes OTA downloads to be slow depending on the time and region.</p>
+                        <p>• If you would like to support the project, you can make a donation to purchase a better server (the monthly price per server is over $10 USD), or if you have your own server, you can collaborate with the project.</p>
+                    </div>
+                </div>
+                <div id="kernel-content" class="tab-content">
+                    <div class="content-text">
 
-<strong>Requirements for OTA App</strong>
-• Root accesss (Magisk, Ksu, etc)
+                        <p>• First download stock img by Vaz15k repository</p>
 
-<strong>Download speed</strong>
-• We currently do not have our own server, which causes OTA downloads to be slow depending on the time and region.
-• If you would like to support the project, you can make a donation to purchase a better server (the monthly price per server is over $10 USD), or if you have your own server, you can collaborate with the project.
-
+                        <div class="expandable-section">
+                            <div class="section-header" onclick="toggleSection('SM-A546E')">
+                               <span class="expand-icon">▶</span>
+                                    <h5>SM-A546E</h5>
+                            </div>
+                            <div class="section-content" id="SM-A546E-content">
+                                <ul><a href="https://github.com/Vaz15k/literate-potato/blob/master/Imagens/SM-A546E/boot.img">boot.img</a></ul>
+                                <ul><a href="https://github.com/Vaz15k/literate-potato/blob/master/Imagens/SM-A546E/init_boot.img">init_boot.img</a></ul>
+                                <ul><a href="https://github.com/Vaz15k/literate-potato/blob/master/Imagens/SM-A546E/vendor_boot.img">vendor_boot.img</a></ul>
+                            </div>
+                        </div>
+                        <div class="expandable-section">
+                            <div class="section-header" onclick="toggleSection('SM-A546B')">
+                               <span class="expand-icon">▶</span>
+                                <h5>SM-A546B</h5>
+                            </div>
+                            <div class="section-content" id="SM-A546B-content">
+                                <ul><a href="https://github.com/Vaz15k/literate-potato/blob/master/Imagens/SM-A546B/boot.img">boot.img</a></ul>
+                                <ul><a href="https://github.com/Vaz15k/literate-potato/blob/master/Imagens/SM-A546B/init_boot.img">init_boot.img</a></ul>
+                                <ul><a href="https://github.com/Vaz15k/literate-potato/blob/master/Imagens/SM-A546B/vendor_boot.img">vendor_boot.img</a></ul>
+                        </div>
+                        <p> </p>
+                        <p>• Reboot in recovery and flash the img´s files in respective partitions</p>
+                        <p>• Clear cache and dalvik cache, and reboot recovery</p>
+                        <p>• Flash new kernel and reboot system</p>
+                        <p>• Enjoy new kernel </p>
                     </div>
                 </div>
             </div>
