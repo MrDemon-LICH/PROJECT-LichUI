@@ -32,7 +32,7 @@ jobs:
             -d message_thread_id="${{ secrets.TELEGRAM_THREAD_COMMIT }}" \
             -d parse_mode=HTML \
             -d disable_web_page_preview=true \
-            --data-urlencode "text=✨ <b>New Commit</b>
+            --data-urlencode "text=✨<b>New Commit</b>✨
       
             <b>Commit:</b> ${{ env.COMMIT_MSG }}
             <b>Author:</b> ${{ env.COMMIT_AUTHOR }}
