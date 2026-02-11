@@ -22,6 +22,8 @@ jobs:
           -d parse_mode=HTML \
           --data-urlencode "text=✨ <b>NEW UPDATE [${{ env.DATE }}]</b>
 
+          https://mrdemon-lich.github.io/PROJECT-LichUI
+
           <b>Download:</b>
           <blockquote>https://mrdemon-lich.github.io/PROJECT-LichUI/index.html</blockquote>
           <b>Old Versions:</b>
