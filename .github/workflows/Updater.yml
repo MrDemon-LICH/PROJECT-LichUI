@@ -20,7 +20,7 @@ jobs:
           -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
           -d message_thread_id=${{ secrets.TELEGRAM_THREAD_LICHUI }} \
           -d parse_mode=HTML \
-          -d caption="✨ <b>NEW UPDATE [${{ env.DATE }}]</b>
+          --data-urlencode "text=✨ <b>NEW UPDATE [${{ env.DATE }}]</b>
 
           <b>Download:</b>
           <blockquote>https://mrdemon-lich.github.io/PROJECT-LichUI/index.html</blockquote>
