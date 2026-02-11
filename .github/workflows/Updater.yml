@@ -20,7 +20,6 @@ jobs:
           -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
           -d message_thread_id=${{ secrets.TELEGRAM_THREAD_LICHUI }} \
           -d parse_mode=HTML \
-          -d photo="https://github.com/MrDemon-LICH/PROJECT-LichUI/blob/main/readme-res/Banner.png" \
           -d caption="✨ <b>NEW UPDATE [${{ env.DATE }}]</b>
 
           <b>Download:</b>
