@@ -17,15 +17,15 @@ jobs:
       # 📢 Send Telegram Photo with Buttons
       - name: Send update photo with buttons
         run: |
-          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendPhoto" \
+          curl -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendPhoto" \
             -F chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
             -F message_thread_id="${{ secrets.TELEGRAM_THREAD_LICHUI }}" \
             -F parse_mode=HTML \
-            -F photo=@readme-res/Banner.png \
+            -F photo="@readme-res/Banner.png" \
             -F caption="✨ <b>NEW UPDATE [${{ env.DATE }}]</b>
-
+      
             Thank you for using and trusting <b>LichUI ❤</b>
-
+      
             © 2025 MrDemon-LICH" \
             -F reply_markup='{
               "inline_keyboard": [
