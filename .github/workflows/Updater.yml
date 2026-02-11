@@ -16,14 +16,12 @@ jobs:
 
       - name: Send update with image + caption
         run: |
-          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage \
+          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendPhoto \
           -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
           -d message_thread_id=${{ secrets.TELEGRAM_THREAD_LICHUI }} \
           -d parse_mode=HTML \
-          --data-urlencode "text=https://github.com/MrDemon-LICH/PROJECT-LichUI \
+          -d photo="https://raw.githubusercontent.com/MrDemon-LICH/PROJECT-LichUI/main/readme-res/Banner.png" \
           --data-urlencode "text=✨ <b>NEW UPDATE [${{ env.DATE }}]</b>
-
-          https://mrdemon-lich.github.io/PROJECT-LichUI
 
           <b>Download:</b>
           <blockquote>https://mrdemon-lich.github.io/PROJECT-LichUI/index.html</blockquote>
