@@ -14,20 +14,19 @@ jobs:
       - name: Set date variable
         run: echo "DATE=$(date +'%Y/%m/%d')" >> $GITHUB_ENV
 
-      # 📢 Send Telegram Photo with Buttons
-      - name: Send update photo with buttons
+      # 📢 Send Telegram Message
+      - name: Send update message with buttons
         run: |
-          curl -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendPhoto" \
-            -F chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
-            -F message_thread_id="${{ secrets.TELEGRAM_THREAD_LICHUI }}" \
-            -F parse_mode=HTML \
-            -F photo="@readme-res/Banner.png" \
-            -F caption="✨ <b>NEW UPDATE [${{ env.DATE }}]</b>
-      
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d message_thread_id="${{ secrets.TELEGRAM_THREAD_LICHUI }}" \
+            -d parse_mode=HTML \
+            --data-urlencode "text=✨ <b>NEW UPDATE [${{ env.DATE }}]</b>
+
             Thank you for using and trusting <b>LichUI ❤</b>
-      
+
             © 2025 MrDemon-LICH" \
-            -F reply_markup='{
+            -d reply_markup='{
               "inline_keyboard": [
                 [
                   { "text": "📥 Download", "url": "https://mrdemon-lich.github.io/PROJECT-LichUI/index.html" }
