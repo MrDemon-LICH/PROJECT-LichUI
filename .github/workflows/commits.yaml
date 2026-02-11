@@ -27,15 +27,23 @@ jobs:
 
       - name: Send Telegram notification
         run: |
-          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendPhoto \
-            -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
-            -d message_thread_id=${{ secrets.TELEGRAM_THREAD_COMMIT }} \
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d message_thread_id="${{ secrets.TELEGRAM_THREAD_COMMIT }}" \
             -d parse_mode=HTML \
-            -d photo="https://github.com/MrDemon-LICH/PROJECT-LichUI/blob/main/readme-res/Banner.png" \
-            -d caption="✨ <b>New Commit</b>
-
+            -d disable_web_page_preview=true \
+            --data-urlencode "text=✨ <b>New Commit</b>
+      
             <b>Commit:</b> ${{ env.COMMIT_MSG }}
             <b>Author:</b> ${{ env.COMMIT_AUTHOR }}
-            <b>Date:</b> ${{ env.COMMIT_DATE }}
-           
-            <b>Link:</b> <blockquote>${{ env.COMMIT_URL }}</blockquote> "
+            <b>Date:</b> ${{ env.COMMIT_DATE }}" \
+            -d reply_markup='{
+              "inline_keyboard": [
+                [
+                  {
+                    "text": "🔎 View Commit",
+                    "url": "${{ env.COMMIT_URL }}"
+                  }
+                ]
+              ]
+            }'
