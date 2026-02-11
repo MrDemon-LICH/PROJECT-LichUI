@@ -36,6 +36,9 @@ jobs:
                 ],
                 [
                   { "text": "📜 Changelog", "url": "https://github.com/MrDemon-LICH/PROJECT-LichUI/blob/main/changelog.txt" }
+                ],
+                [
+                  { "text": "📢 Credits", "url": "https://github.com/MrDemon-LICH/PROJECT-LichUI#credits" }
                 ]
               ]
             }'
