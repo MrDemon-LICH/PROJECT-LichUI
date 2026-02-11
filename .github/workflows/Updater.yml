@@ -21,9 +21,9 @@ jobs:
             -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
             -d message_thread_id="${{ secrets.TELEGRAM_THREAD_LICHUI }}" \
             -d parse_mode=HTML \
-            --data-urlencode "text=✨ <b>NEW UPDATE [${{ env.DATE }}]</b>
+            --data-urlencode "text=🚀<b>NEW UPDATE [${{ env.DATE }}]</b>🚀
 
-            Thank you for using and trusting <b>LichUI ❤</b>
+            Thank you for using <b>LichUI ❤</b>
 
             © 2025 MrDemon-LICH" \
             -d reply_markup='{
