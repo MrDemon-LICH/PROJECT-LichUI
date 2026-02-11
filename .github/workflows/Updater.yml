@@ -6,41 +6,45 @@ on:
 jobs:
   Updating:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Set date variable
-        id: date
         run: echo "DATE=$(date +'%Y/%m/%d')" >> $GITHUB_ENV
 
-      - name: Send update with image + caption
+      # 📢 Send Telegram Message
+      - name: Send update message with buttons
         run: |
-          curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendPhoto \
-          -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
-          -d message_thread_id=${{ secrets.TELEGRAM_THREAD_LICHUI }} \
-          -d parse_mode=HTML \
-          -d photo="https://raw.githubusercontent.com/MrDemon-LICH/PROJECT-LichUI/main/readme-res/Banner.png" \
-          --data-urlencode "text=✨ <b>NEW UPDATE [${{ env.DATE }}]</b>
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d message_thread_id="${{ secrets.TELEGRAM_THREAD_LICHUI }}" \
+            -d parse_mode=HTML \
+            -d disable_web_page_preview=false \
+            --data-urlencode "text=✨ <b>NEW UPDATE [${{ env.DATE }}]</b>
 
-          <b>Download:</b>
-          <blockquote>https://mrdemon-lich.github.io/PROJECT-LichUI/index.html</blockquote>
-          <b>Old Versions:</b>
-          <blockquote>https://sourceforge.net/projects/lichrom/files/SM-A546X/</blockquote>
-          <b>Changelog:</b>
-          <blockquote>https://github.com/MrDemon-LICH/PROJECT-LichUI/blob/main/changelog.txt</blockquote>
-          
-          Thank you for using and trusting <b>LichUI ❤</b>
-          
-          © 2025 MrDemon-LICH. Prohibited: Modifications, Redistribution, and Partial Usage"
+            https://github.com/MrDemon-LICH/PROJECT-LichUI
 
-      - name: Configure Git
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            Thank you for using and trusting <b>LichUI ❤</b>
 
+            © 2025 MrDemon-LICH" \
+            -d reply_markup='{
+              "inline_keyboard": [
+                [
+                  { "text": "📥 Download", "url": "https://mrdemon-lich.github.io/PROJECT-LichUI/index.html" }
+                ],
+                [
+                  { "text": "📦 Old Versions", "url": "https://sourceforge.net/projects/lichrom/files/SM-A546X/" }
+                ],
+                [
+                  { "text": "📜 Changelog", "url": "https://github.com/MrDemon-LICH/PROJECT-LichUI/blob/main/changelog.txt" }
+                ]
+              ]
+            }'
+
+      # 🏷 Create GitHub Release
       - name: Public Update
-        id: release
         uses: softprops/action-gh-release@v2
         with:
           name: Update ${{ env.DATE }}
@@ -49,9 +53,10 @@ jobs:
             ### Update Info
             **ROM DATE:** ${{ env.DATE }}
             **OneUI Version:** 8.0
-            #### ROM
-            - [LichUI](https://sourceforge.net/projects/lichrom/files/SM-A546X/)   
-            #### Thanks for using LichUI
 
+            #### ROM
+            - [LichUI](https://sourceforge.net/projects/lichrom/files/SM-A546X/)
+
+            #### Thanks for using LichUI
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
