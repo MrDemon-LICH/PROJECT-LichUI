@@ -1,9 +1,9 @@
 <h1 align="center">
   <img loading="lazy" src="readme-res/Banner.png" width="700"/>
   <p align="center">
-  <a href="https://github.com/MrDemon-LICH/PROJECT-LichUI/commits/main"><img loading="lazy" src="https://img.shields.io/github/last-commit/MrDemon-LICH/PROJECT-LichUI/main?style=for-the-badge"/></a>
-  <a href="https://github.com/MrDemon-LICH/PROJECT-LichUI/stargazers"><img loading="lazy" src="https://img.shields.io/github/stars/MrDemon-LICH/PROJECT-LichUI?style=for-the-badge"/></a>
-  <a href="https://github.com/MrDemon-LICH/PROJECT-LichUI/graphs/contributors"><img loading="lazy" src="https://img.shields.io/github/contributors/MrDemon-LICH/PROJECT-LichUI?style=for-the-badge"/></a>
+  <a href="https://github.com/MrDemonc/PROJECT-LichUI/commits/main"><img loading="lazy" src="https://img.shields.io/github/last-commit/MrDemonc/PROJECT-LichUI/main?style=for-the-badge"/></a>
+  <a href="https://github.com/MrDemonc/PROJECT-LichUI/stargazers"><img loading="lazy" src="https://img.shields.io/github/stars/MrDemonc/PROJECT-LichUI?style=for-the-badge"/></a>
+  <a href="https://github.com/MrDemonc/PROJECT-LichUI/graphs/contributors"><img loading="lazy" src="https://img.shields.io/github/contributors/MrDemonc/PROJECT-LichUI?style=for-the-badge"/></a>
   <a href="#"><img loading="lazy" src="https://img.shields.io/badge/OneUI-8.0-blueviolet?style=for-the-badge"/></a>
 </p>
 </h1>
