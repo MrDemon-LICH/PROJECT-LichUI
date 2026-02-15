@@ -14,7 +14,7 @@
 <p align="center">
   <a href="https://t.me/A54DEVELOPER"><kbd> <br> 💬 Telegram <br><br> </kbd></a>
   •
-  <a href="https://mrdemon-lich.github.io/PROJECT-LichUI/index.html"><kbd> <br> 🌐 Web <br><br> </kbd></a>
+  <a href="https://mrdemonc.github.io/PROJECT-LichUI/index.html"><kbd> <br> 🌐 Web <br><br> </kbd></a>
   •
   <a href="https://www.paypal.me/TommyZambrano"><kbd> <br> ☕️ Donation <br><br> </kbd></a>
 </p>
@@ -43,11 +43,11 @@ LichUI brings the best of Samsung and exclusive enhancements:
 *And more: high-end animations, AOD clock transitions, adaptive color tone, adaptive refresh rate, extra brightness, picture remaster, object/shadow/reflection eraser, image clipper, Smart Suggestions widget, camera privacy toggle, debloated system, and more!*
 
 ## How to install LichUI?
-[<kbd> <br> ⚙️ Installation guide <br> </kbd>](https://mrdemon-lich.github.io/PROJECT-LichUI/documentation.html)
+[<kbd> <br> ⚙️ Installation guide <br> </kbd>](https://mrdemonc.github.io/PROJECT-LichUI/documentation.html)
 
 ## Copyright
 
-© 2025 MrDemon-LICH. All rights reserved.
+© 2025 MrDemonc. All rights reserved.
 
 - LichUI is a privately compiled ROM, intended for personal use only.
 - Modification, redistribution, or any unauthorized use of the ROM or its components is strictly prohibited.
