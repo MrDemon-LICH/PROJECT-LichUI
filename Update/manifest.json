@@ -1,13 +1,13 @@
 {
   "response": [
     {
-      "builddate": 20250131,
-      "md5": "60a6276da5479f286f8e8a9e6b0ef543",
-      "patch": 20251101,
-      "size": 6547889793,
+      "builddate": 20260216,
+      "md5": "9b4af7f13360bfa3f544238790321bd2",
+      "patch": 20260101,
+      "size": 6552761387,
       "bl": "XXUFEYI4",
-      "url": "https://drive.google.com/file/d/1FGHVFfp8e-cLvNpbi27UDSFzZXGiOGl3/view?usp=sharing",
-      "version": "5.1.3"
+      "url": "https://sourceforge.net/projects/lichrom/files/SM-A546X/LichUI_5.1.4_a54x-signed.zip",
+      "version": "5.1.4"
     }
   ]
 }
