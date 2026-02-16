@@ -1,9 +1,5 @@
 Update OTA
 OneUI 8.0
-Base S901BXXSKGYK5
-Update Lich Setting
-Add Battery Info
-November segurity patch
-Reboot menu in LichUI settings - credit for Salvogiangri
-Add PIF and Keybox - credit for Salvogiangri
-Google Photo unlimited option - credit for Salvogiangri
+Base S901BXXSLGZA1
+January segurity patch
+Minor fixes
