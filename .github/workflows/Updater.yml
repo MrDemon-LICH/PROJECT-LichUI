@@ -25,20 +25,20 @@ jobs:
 
             Thank you for using <b>LichUI ❤</b>
 
-            © 2025 MrDemon-LICH" \
+            © 2025 MrDemonc" \
             -d reply_markup='{
               "inline_keyboard": [
                 [
-                  { "text": "📥 Download", "url": "https://mrdemon-lich.github.io/PROJECT-LichUI/index.html" }
+                  { "text": "📥 Download", "url": "https://mrdemonc.github.io/PROJECT-LichUI/index.html" }
                 ],
                 [
                   { "text": "📦 Old Versions", "url": "https://sourceforge.net/projects/lichrom/files/SM-A546X/" }
                 ],
                 [
-                  { "text": "📜 Changelog", "url": "https://github.com/MrDemon-LICH/PROJECT-LichUI/blob/main/changelog.txt" }
+                  { "text": "📜 Changelog", "url": "https://github.com/MrDemonc/PROJECT-LichUI/blob/main/changelog.txt" }
                 ],
                 [
-                  { "text": "📢 Credits", "url": "https://github.com/MrDemon-LICH/PROJECT-LichUI#credits" }
+                  { "text": "📢 Credits", "url": "https://github.com/MrDemonc/PROJECT-LichUI#credits" }
                 ]
               ]
             }'
